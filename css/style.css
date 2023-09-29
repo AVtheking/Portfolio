@@ -33,6 +33,17 @@ body{
     align-items: center;
     padding: 0 8%;
 }
+nav .checkbox{
+    display: none;
+}
+nav input{
+    display: none;
+}
+nav .checkbox i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
 .menu-icon{
     display: none;
     border: none;
@@ -68,21 +79,61 @@ li:hover{
   margin-right: auto;
 }
 
+
+.checkbtn{
+    display: block;
+    position: fixed;
+    font-size: 30px;   
+    float : right ; 
+    top: 1vh;
+    color: var(--tertiary);
+    z-index: 999;
+    display: none ;
+}
+
 @media only screen and (max-width : 600px){
     .navbar{
         height: 10vh;
     }
-    .letter{
-        font-size: 2.0rem;
-        font-weight: 800;
-        margin-left: 1rem;
-        margin-right: auto;
-      }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 10vh;
+        left : -100%;
+        text-align: center;
+        transition: all .5s;
+    }
     li{
-        padding : 1vh 1vh ;
-        font-size: 2vh;
+        display: block;
+        font-size: 20px;
+    }
+    .checkbtn{
+        display: block;
+        position: absolute;
+        top: 2vh;
+        right: 9vw;
     }
 
+    #check-home:checked ~ ul{
+        left : 0
+    }
+    #check-top:checked ~ ul{
+        left : 0
+    }
+    #check-skills:checked ~ ul{
+        left : 0
+    }
+    #check-projects:checked ~ ul{
+        left : 0
+    }
+    #check-contact:checked ~ ul{
+        left : 0
+    }
+   
+    
+   
 }
     #home{
         background-image:linear-gradient(to bottom right, #05050a 30%, #090c72);
@@ -155,7 +206,7 @@ li:hover{
     /* min-height: 100vh; */
 }
 #skills{
-    background-color: #0d0f28;
+    background-color: #0d0f28;  
   
     padding: 11vh 0 10vh;
 }
@@ -199,12 +250,12 @@ li:hover{
     position: relative  ;
 }
 .chip:hover {
-    background-color: var(--secondary); /* Change the background color on hover */
-    transition: background-color 0.3s ease-in-out; /* Add a smooth transition */
+    background-color: var(--secondary); 
+    transition: background-color 0.3s ease-in-out; 
 }.icon {
-    width: 30px; /* Adjust the width to your preference */
-    height: 30px; /* Adjust the height to your preference */
-    margin-right: 10px; /* Add margin between icons if needed */
+    width: 30px; 
+    height: 30px;
+    margin-right: 10px; 
     border-radius: 20px;
     transition: transform 0.2s ease-in-out;
 }.icon:hover{
@@ -222,9 +273,9 @@ li:hover{
 }.logo:hover{
     transform: scale(1.5);
 }.logo::after {
-    content: attr(data-tooltip); /* Display the value of data-tooltip as tooltip text */
+    content: attr(data-tooltip); 
     position: absolute;
-    bottom: -30px; /* Adjust the position as needed */
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
     padding: 5px;
@@ -253,10 +304,10 @@ li:hover{
 }.project-grid{
     display: grid;
    margin: 10px;
-   grid-template-columns: repeat(3, 1fr); /* Adjust column width as needed */
-    gap: 20px; /* Adjust the gap between project cards */
+   grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
     justify-content: center;
-    /* align-items: center; */
+ 
     align-items: center;
 }
 
