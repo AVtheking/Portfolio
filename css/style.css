@@ -108,12 +108,14 @@ li:hover{
 }
 .subtext{
     padding: 1vh 0;
+    width: 60%;
     font-size: 2.4rem;
     color: var(--tertiary);
 }.bottomtext{
     margin: 2rem 0 0;
     width: 50%;
     font-weight: 400;
+    color: white;
 }.hoverlink{
     text-decoration: underline;
 }.hoverlink:hover{
@@ -121,20 +123,20 @@ li:hover{
 }#skills,#project{
     text-align: center;
     color: var(--text1);
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 #skills{
-    background: linear-gradient(to bottom right, var(--primary), #10112d);
-    height:auto;
+    background-color: #0d0f28;
+  
     padding: 11vh 0 10vh;
 }
 .box{
     font-family: 'JetBrains Mono', monospace;
-    background-color: #083156;
+    background-color: #d4e0e3;
     margin: 5vh auto;
-    padding: 3vh 8vw;
+    padding: 3vh 2vw;
     width: 55vw;
-    height: auto;
+    /* height: auto; */
     text-align: center;
 }
 
@@ -142,7 +144,8 @@ li:hover{
     backdrop-filter: blur(10px);
    
     border-radius: 20px;
-    box-shadow: 5px 5px 15px 5px rgba(86, 85, 85, 0.37);
+    box-shadow: 0 0 10px 5px rgba(117, 199, 157, 0.797);
+
 }
 
 .subhead{
@@ -160,16 +163,13 @@ li:hover{
     margin: 3px;
     padding: 4px;
     border: transparent;
+    font-size: 15px;
     border-radius: 3px;
     background-color: var(--tertiary)     ;
     color: var(--primary);
     position: relative  ;
-}.tech-stack{
-    width: 85%;
-    margin-top: 4rem;
-   display: flex;
-   flex-direction: row;
-}.chip:hover {
+}
+.chip:hover {
     background-color: var(--secondary); /* Change the background color on hover */
     transition: background-color 0.3s ease-in-out; /* Add a smooth transition */
 }.icon {
@@ -183,4 +183,59 @@ li:hover{
     width: 40px;
     height: 50px;
 
+}.general{
+    background-image:linear-gradient(to bottom right, #05050a 30%, #090c72);
 }
+
+#projects{
+    background-image:linear-gradient(to bottom right, #05050a 30%, #090c72);
+    height:auto;
+    padding: 11vh 0 10vh;
+    text-align: center;
+}.project-grid{
+    display: grid;
+   margin: 10px;
+   grid-template-columns: repeat(3, 1fr); /* Adjust column width as needed */
+    gap: 20px; /* Adjust the gap between project cards */
+    justify-content: center;
+    /* align-items: center; */
+    align-items: center;
+}.project-card {
+    background-color: var(--primary);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(106, 104, 104, 0.2);
+    /* text-align: center; */
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    
+   
+    color: var(--primary);
+}.project-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}.project-description{
+    margin: 2rem 0 0;
+    width: 80%;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: start  ;
+    color: white;
+}.tech-stack{
+    width: 100%;
+    margin-top: 1.4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: small;
+}.project-card:hover{
+    transform: scale(1.06);
+    background-color: #1d0885;
+}.project-heading{
+    color: #ebe70b;
+    font-size: 25px;
+    filter:blur(0.6px);
+}
+
