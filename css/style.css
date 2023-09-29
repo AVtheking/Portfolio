@@ -33,3 +33,29 @@ body{
     align-items: center;
     padding: 0 8%;
 }
+nav>ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:var(--tertiary);
+    text-align: center;
+    cursor: pointer;
+}
+li{
+    display: inline-block;
+    text-align: center;
+    padding: 4rem 1rem;
+    font-size: 25px;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+    transition: transform 0.2s ease-in-out;
+}
+li:hover{
+    transform: scale(1.55);
+}.letter{
+  font-size: 2.5em;
+  font-weight: 800;
+  margin-left: 2.5rem;
+  margin-right: auto;
+}
