@@ -103,6 +103,7 @@ li:hover{
     background-color: transparent;
     font-size: 2.7em;
     font-weight: 800;
+    color: #d4e0e3;
     margin-bottom: 3vh;
     animation: glow 2s ease-in-out infinite alternate;
 }
@@ -177,18 +178,47 @@ li:hover{
     height: 30px; /* Adjust the height to your preference */
     margin-right: 10px; /* Add margin between icons if needed */
     border-radius: 20px;
-}.social-media-icons{
+    transition: transform 0.2s ease-in-out;
+}.icon:hover{
+    transform: scale(1.6);
+}
+
+.social-media-icons{
     margin: 10px;
 }.logo{
     width: 40px;
     height: 50px;
+    transition: transform 0.2s ease-in-out;
+    
 
-}.general{
+}.logo:hover{
+    transform: scale(1.5);
+}.logo::after {
+    content: attr(data-tooltip); /* Display the value of data-tooltip as tooltip text */
+    position: absolute;
+    bottom: -30px; /* Adjust the position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: black;
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.2s ease-in-out;
+}
+.logo:hover::after {
+    opacity: 0.5;
+}
+
+.general{
     background-image:linear-gradient(to bottom right, #05050a 30%, #090c72);
 }
 
 #projects{
-    background-image:linear-gradient(to bottom right, #05050a 30%, #090c72);
+     background-image:linear-gradient(to bottom right, #05050a 30%, #090c72);
+     
+     /* background-color: #0d0f28; */
     height:auto;
     padding: 11vh 0 10vh;
     text-align: center;
@@ -204,8 +234,9 @@ li:hover{
     background-color: var(--primary);
     padding: 20px;
     margin: 20px;
+    /* width: 6-%; */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(106, 104, 104, 0.2);
+    box-shadow: 0 0 10px rgb(107, 103, 25);
     /* text-align: center; */
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     
@@ -238,4 +269,11 @@ li:hover{
     font-size: 25px;
     filter:blur(0.6px);
 }
+#contact{
 
+     
+    background-color: var(--primary);
+   /* height:auto; */
+   padding: 5vh 0 5vh;
+   text-align: center;
+}
