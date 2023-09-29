@@ -99,7 +99,7 @@ li:hover{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #2c3e50;
+        background: #041a31;
         top: 10vh;
         left : -100%;
         text-align: center;
@@ -119,18 +119,7 @@ li:hover{
     #check-home:checked ~ ul{
         left : 0
     }
-    #check-top:checked ~ ul{
-        left : 0
-    }
-    #check-skills:checked ~ ul{
-        left : 0
-    }
-    #check-projects:checked ~ ul{
-        left : 0
-    }
-    #check-contact:checked ~ ul{
-        left : 0
-    }
+  
    
     
    
