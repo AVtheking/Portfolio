@@ -60,8 +60,8 @@ li:hover{
   margin-left: 2.5rem;
   margin-right: auto;
 }
-#home{
-    background-image:linear-gradient(to bottom right, var(--primary), #10112d);
+    #home{
+        background-image:linear-gradient(to bottom right, #05050a 30%, #090c72);
     display: flex;
     min-height: 100vh;
     height:auto;
@@ -128,21 +128,21 @@ li:hover{
     height:auto;
     padding: 11vh 0 10vh;
 }
-.cntr{
+.box{
     font-family: 'JetBrains Mono', monospace;
-    background-color: #011221;
+    background-color: #083156;
     margin: 5vh auto;
     padding: 3vh 8vw;
     width: 55vw;
     height: auto;
-    text-align: start;
+    text-align: center;
 }
 
 .glass{
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
    
     border-radius: 20px;
-    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 5px 5px 15px 5px rgba(86, 85, 85, 0.37);
 }
 
 .subhead{
@@ -176,6 +176,11 @@ li:hover{
     width: 30px; /* Adjust the width to your preference */
     height: 30px; /* Adjust the height to your preference */
     margin-right: 10px; /* Add margin between icons if needed */
+    border-radius: 20px;
 }.social-media-icons{
     margin: 10px;
+}.logo{
+    width: 40px;
+    height: 50px;
+
 }
