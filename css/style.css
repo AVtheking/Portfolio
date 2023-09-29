@@ -21,13 +21,13 @@ body{
 }
 .navbar{
     position: fixed;
-    z-index: 2;
+    z-index: 1  ;
     top: 0;
     display: flex;
     flex-direction: row;
     background-color: var(--primary);
     color: var(--primary);
-    height: auto;
+    height: 100px;
     width: 100vw;
     justify-content: end;
     align-items: center;
@@ -49,7 +49,7 @@ li{
     padding: 4rem 1rem;
     font-size: 25px;
     cursor: pointer;
-    border: 1.5px solid transparent;
+    border: 1px solid transparent;
     transition: transform 0.2s ease-in-out;
 }
 li:hover{
@@ -61,7 +61,7 @@ li:hover{
   margin-right: auto;
 }
 #home{
-    background-image: linear-gradient(to bottom right, var(--primary), var(--primary));
+    background-image:linear-gradient(to bottom right, var(--primary), #10112d);
     display: flex;
     min-height: 100vh;
     height:auto;
@@ -75,7 +75,7 @@ li:hover{
     color: var(--tertiary);
 }
 .head-1 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: 800;
     color: antiquewhite;
     filter: blur(0.6px);
@@ -118,4 +118,52 @@ li:hover{
     text-decoration: underline;
 }.hoverlink:hover{
     color: var(--secondary);
+}#skills,#project{
+    text-align: center;
+    color: var(--text1);
+    min-height: 100vh;
+}
+#skills{
+    background: linear-gradient(to bottom right, var(--primary), #10112d);
+    height:auto;
+    padding: 11vh 0 10vh;
+}
+.cntr{
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #011221;
+    margin: 5vh auto;
+    padding: 3vh 8vw;
+    width: 55vw;
+    height: auto;
+    text-align: start;
+}
+
+.glass{
+    backdrop-filter: blur(8px);
+   
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.37);
+}
+
+.subhead{
+    color: var(--text1);
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 1vh 0 2vh;
+}
+
+.points{
+    color: var(--tertiary);
+    padding: 0 0 2.5vh;
+}
+.chip{
+    margin: 3px;
+    padding: 4px;
+    border: transparent;
+    border-radius: 3px;
+    background-color: var(--tertiary)     ;
+    color: var(--primary);
+}.tech-stack{
+   display: flex;
+   flex-direction: row;
 }
