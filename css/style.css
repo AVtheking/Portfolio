@@ -163,7 +163,19 @@ li:hover{
     border-radius: 3px;
     background-color: var(--tertiary)     ;
     color: var(--primary);
+    position: relative  ;
 }.tech-stack{
+    width: 85%;
+    margin-top: 4rem;
    display: flex;
    flex-direction: row;
+}.chip:hover {
+    background-color: var(--secondary); /* Change the background color on hover */
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition */
+}.icon {
+    width: 30px; /* Adjust the width to your preference */
+    height: 30px; /* Adjust the height to your preference */
+    margin-right: 10px; /* Add margin between icons if needed */
+}.social-media-icons{
+    margin: 10px;
 }
