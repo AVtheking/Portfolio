@@ -1,5 +1,5 @@
 :root{
-    --primary: #2b2c2d;
+    --primary: #0c0c0c;
     /* --primary: #fcfcfc; */
     --secondary: #339bff;
     --tertiary: #d9d6d1;
@@ -38,6 +38,7 @@ nav>ul{
 }
 a{
     text-decoration: none;
+    
     color:var(--tertiary);
     text-align: center;
     cursor: pointer;
@@ -58,4 +59,63 @@ li:hover{
   font-weight: 800;
   margin-left: 2.5rem;
   margin-right: auto;
+}
+#home{
+    background-image: linear-gradient(to bottom right, var(--primary), var(--primary));
+    display: flex;
+    min-height: 100vh;
+    height:auto;
+}
+.left{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 14vw 3vw 2vw 11.5vw;
+    color: var(--tertiary);
+}
+.head-1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: antiquewhite;
+    filter: blur(0.6px);
+   
+}
+
+/* Define the glow animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(209, 212, 191, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 20px rgb(226, 230, 233);
+    }
+}
+/* @keyframes blur {
+    0% {
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(5px);
+    } */
+/* } */
+.head-2{
+    background-color: transparent;
+    font-size: 2.7em;
+    font-weight: 800;
+    margin-bottom: 3vh;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+.subtext{
+    padding: 1vh 0;
+    font-size: 2.4rem;
+    color: var(--tertiary);
+}.bottomtext{
+    margin: 2rem 0 0;
+    width: 50%;
+    font-weight: 400;
+}.hoverlink{
+    text-decoration: underline;
+}.hoverlink:hover{
+    color: var(--secondary);
 }
