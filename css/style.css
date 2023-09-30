@@ -93,7 +93,7 @@ li:hover{
 
 @media only screen and (max-width : 600px){
     .navbar{
-        height: 10vh;
+        height: 9vh;
     }
     ul{
         position: fixed;
@@ -142,7 +142,7 @@ li:hover{
         margin: 5vh 0 0;
     }
     .left>.head-2{
-        font-size: 2.3rem;
+        font-size: 1.7rem;
         margin: 0 0 2vh;
     }
     .subtext{
