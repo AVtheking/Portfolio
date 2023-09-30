@@ -93,7 +93,7 @@ li:hover{
 
 @media only screen and (max-width : 600px){
     .navbar{
-        height: 9vh;
+        height: 5vh;
     }
     ul{
         position: fixed;
