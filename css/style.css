@@ -204,6 +204,15 @@ li:hover{
     color: #d4e0e3;
     margin-bottom: 3vh;
     animation: glow 2s ease-in-out infinite alternate;
+}.head-3{
+    background-color: transparent;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #d4e0e3;
+    margin-bottom: 3vh;
+    /* animation: glow 2s ease-in-out infinite alternate; */
+}.insp{
+    color:#248dee;
 }
 .subtext{
     padding: 1vh 0;
@@ -213,6 +222,7 @@ li:hover{
 }.bottomtext{
     margin: 2rem 0 0;
     width: 50%;
+    
     font-weight: 400;
     color: white;
 }.hoverlink{
@@ -395,5 +405,6 @@ li:hover{
    /* height:auto; */
    padding: 5vh 0 5vh;
    text-align: center;
+   align-items: center;
 }
     
