@@ -119,6 +119,36 @@ li:hover{
     #check-home:checked ~ ul{
         left : 0
     }
+    #home{
+        padding-top: 8vh;
+        flex-direction: column;
+        min-height: 70vh;
+        height: auto;
+        align-items: center;
+    }
+    .left{
+        width: 100%;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left>div{
+        text-align: center;
+    }
+    .left>.head-1{
+        font-size: 1.4rem;
+        margin: 5vh 0 0;
+    }
+    .left>.head-2{
+        font-size: 2.3rem;
+        margin: 0 0 2vh;
+    }
+    .subtext{
+        margin: 2vh 0 4vh;
+        font-size: 1.4rem;
+    }
   
    
     
