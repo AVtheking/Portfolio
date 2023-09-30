@@ -27,7 +27,7 @@ body{
     flex-direction: row;
     background-color: var(--primary);
     color: var(--primary);
-    height: 14vh;
+    height: 12vh;
     width: 100vw;
     justify-content: end;
     align-items: center;
@@ -93,7 +93,7 @@ li:hover{
 
 @media only screen and (max-width : 600px){
     .navbar{
-        height: 5vh;
+        height: 9vh;
     }
     ul{
         position: fixed;
